@@ -4,12 +4,9 @@ import { createGlobalStyle } from 'styled-components';
 import App from './App';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-window.process={} 
 const Global = createGlobalStyle`
-*{
-  // margin:0;
-  // padding:0;
-  box-sizing:border-box;
+* {
+   box-sizing:border-box;
   font-weight:600;
 }
 body{
@@ -19,7 +16,7 @@ body{
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Global/>
+    <Global />
     <App />
   </React.StrictMode>
 );

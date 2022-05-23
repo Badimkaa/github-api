@@ -13,6 +13,7 @@ background-color:#0064EB;
 `
 export const HeaderWrapper = styled(Flex)`
 max-width:1270px;
+margin:0 auto;
 `
 export const Input = styled.input.attrs({ type: 'text' })`
 width:100%;

@@ -2,8 +2,9 @@ import React from 'react'
 import { Loader } from '../../utils/Loader'
 import { PageWrapper, StyledPage, Text } from './Style'
 
-const EmptyPage = ({ 
+const EmptyPage = ({
     wrapperHeight,
+    height,
     isLoading,
     textWidth,
     text, renderImage }) => {
@@ -12,11 +13,12 @@ const EmptyPage = ({
             {isLoading
                 ? <Loader />
                 : <StyledPage
+                    height={height}
                     align='center'
                     direction='column'
                     justify='space-between'
                 >
-                   {renderImage()}
+                    {renderImage()}
                     <Text textWidth={textWidth}>
                         {text}
                     </Text>

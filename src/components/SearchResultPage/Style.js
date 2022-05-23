@@ -17,7 +17,7 @@ gap:85px;
 `
 export const DivFlex = styled(Flex)`
 width:877px;
-height:570px;
+height:567px;
 @media (max-width: 490px) {
     width:100%;
     height:260px;

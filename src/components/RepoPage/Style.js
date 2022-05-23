@@ -6,7 +6,7 @@ position:relative;
 top:-22px;
 width:877px;
 @media (max-width:490px) {
-    width:310px;
+    width:300px;
 }
 
 `

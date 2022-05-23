@@ -7,8 +7,7 @@ height:${props => props.wrapperHeight || window.innerHeight - 72}px;
 user-select:none;
 `
 export const StyledPage = styled(Flex)`
-// width:100%;
-height:196px;
+height:${props=>props.height || '196'}px;
 `
 
 export const Image = styled.img`

@@ -60,17 +60,6 @@ const App = () => {
     }
   };
 
-  // useEffect(() => {
-  //   const handlePageChange = async (activePage) => {
-  //     setIsLoading(true)
-  //     const res = await getRepo(query, activePage)
-  //     setUserRepo(res.data)
-  //     setIsLoading(false)
-  //   }
-  //   if (activePage) {
-  //     handlePageChange(activePage)
-  //   }
-  // }, [activePage, query])
   const handlePageChange = useCallback(async () => {
     try {
       setIsLoading(true)
@@ -88,7 +77,6 @@ const App = () => {
   }, [activePage, handlePageChange])
 
   const onPageChanged = async (clickedItem, clickedItemIndex) => {
-    //заменить цифры константами по возможности
     let pagesCount = Math.ceil(userInfo.public_repos / REPO_PER_PAGE)
     if (clickedItem === '...' && (clickedItemIndex === 3 || clickedItemIndex === 5)) {
       clickedItem = activePage + numberOfPagesWhenClickedDots
@@ -109,6 +97,7 @@ const App = () => {
   } else if (isUserNotFound) {
     renderPage = <EmptyPage
       text={'User not found'}
+      height='165'
       renderImage={() => <Image
         src={userIcon}
       />}

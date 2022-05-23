@@ -37,5 +37,4 @@ background-color:${props => props.activePage ? '#0064EB' : 'unset'};
 color:${props => props.activePage ? '#FFFFFF' : '#808080'};
 `
 export const Pages = styled(Flex)`
-width:${props => props.width} px;
 `
